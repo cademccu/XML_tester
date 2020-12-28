@@ -19,3 +19,18 @@ If permission denied to execute, run this command:
 ~~~bash 
 chmod +x run.sh
 ~~~
+
+You can test various scenarios usings the included files and the templates and test directories. By setting the includes in your main test file, you can test how the paths have to be set up, and where the files and includes are being read from.
+
+### OUTPUT
+
+Upon running the program, an example output looks like this:
+
+~~~
+./run.sh cfg/test.cfg 
+<FROM STARTING FILE, -, ->
+<FROM include_1.cfg, -, ->
+<FROM sub_include_A.cfg, -, IN cfg/>
+~~~
+
+Where the first part of the parameter, or the \<name\> tag, is the filename the output is from. The middle section \<value\> just contains a \-, and the last tag \<access\> will contain the directory path from cfg (Or wherever being run).
