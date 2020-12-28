@@ -30,6 +30,7 @@ public class DomParserExample {
 			  cfg_file = new File(args[0]);
 		  } catch (Exception notFound) {
 			  System.err.println("\nThe provided file was not found.\nPlease use a file path relative to the top directory.\n");
+			  notFound.printStackTrace();
 			  System.exit(-1);
 		  }
 
