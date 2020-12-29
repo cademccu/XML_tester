@@ -5,6 +5,10 @@
 
 javac XMLPackage/*.java
 
+echo "----------------------------"
+echo "--- COMPILATION FINISHED ---"
+echo "----------------------------"
+
 if [ $? -eq 0 ]
 then 
 	java XMLPackage/DomParserExample.java $1
