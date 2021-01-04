@@ -27,10 +27,24 @@ You can test various scenarios usings the included files and the templates and t
 Upon running the program, an example output looks like this:
 
 ~~~
-./run.sh cfg/test.cfg 
+cademccumber$ ./run.sh cfg/test_seperate_ENTITY_file.cfg 
+ 
+----------------------------
+--- COMPILATION FINISHED ---
+----------------------------
+ 
 <FROM STARTING FILE, -, ->
-<FROM include_1.cfg, -, ->
-<FROM sub_include_A.cfg, -, IN cfg/>
+<FROM include_1_seperate_ENTITY_file.cfg, -, ->
+<FROM sub_include_B_seperate_ENTITY_file.cfg, -, IN cfg/sub_dir/>
+<FROM sub_include_A_seperate_ENTITY_file.cfg, -, IN cfg/>
+<FROM sub_include_C_seperate_ENTITY_file.cfg, -, IN cfg/sub_dir/sub_sub_dir/>
 ~~~
 
 Where the first part of the parameter, or the \<name\> tag, is the filename the output is from. The middle section \<value\> just contains a \-, and the last tag \<access\> will contain the directory path from cfg (Or wherever being run).
+
+
+### Additional Information
+
+A proof of concept for using a seperate file for ENTITYs is included using the entities.ent file and all .xml/.cfg files following the naming convention of \*\_seperate\_ENTITY\_file.cfg . This example shows how you can standardize the paths in entities, since they only have to relative to entity file. These ENTITYs can be used anywhere in the other included files (being careful not to create a XML reference loop).
+
+
