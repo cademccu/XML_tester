@@ -5,9 +5,11 @@
 
 javac XMLPackage/*.java
 
+echo " "
 echo "----------------------------"
 echo "--- COMPILATION FINISHED ---"
 echo "----------------------------"
+echo " "
 
 if [ $? -eq 0 ]
 then 

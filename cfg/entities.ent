@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-<!ENTITY include_1 SYSTEM 			"include_1.cfg"		>
-<!ENTITY sub_include_A SYSTEM 			"sub_include_A.cfg"	>
-<!ENTITY sub_include_B SYSTEM 			"sub_dir/sub_include_B.cfg"	>
+<!ENTITY include_1 SYSTEM 			"include_1_seperate_ENTITY_file.cfg"					>
+<!ENTITY sub_include_A SYSTEM 			"sub_include_A_seperate_ENTITY_file.cfg"				>
+<!ENTITY sub_include_B SYSTEM 			"sub_dir/sub_include_B_seperate_ENTITY_file.cfg"			>
+<!ENTITY sub_include_C SYSTEM 			"sub_dir/sub_sub_dir/sub_include_C_seperate_ENTITY_file.cfg"		>
 
 
 
